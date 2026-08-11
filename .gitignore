@@ -1,0 +1,24 @@
+# Secrets — never tracked
+.env
+.env.*
+*.pem
+*.key
+*.p12
+credentials*
+secrets*
+token*
+!token-schema.md
+
+# Sensitive exports
+*.csv
+*_raw.json
+backup*
+*.sql
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
