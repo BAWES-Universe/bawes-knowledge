@@ -3,7 +3,7 @@
 set -e
 
 echo "=== 1. Secret patterns (public repo!) ==="
-if git grep -nE "(BEGIN RSA|BEGIN OPENSSH|ghp_|gho_|ghs_|ntn_[A-Za-z0-9]{20}|sk-[A-Za-z0-9]{20}|AKIA[0-9A-Z]{16}|xox[baprs]-|secret_[A-Za-z0-9]{20}|password[[:space:]]*=[[:space:]]*['\"][^'\"]{6,})" -- . ':!*.md' ':!.gitignore' 2>/dev/null; then
+if git grep -nE "(BEGIN RSA|BEGIN OPENSSH|ghp_|gho_|ghs_|ntn_[A-Za-z0-9]{20}|sk-[A-Za-z0-9]{20}|AKIA[0-9A-Z]{16}|xox[baprs]-|secret_[A-Za-z0-9]{20}|password[[:space:]]*=[[:space:]]*['\"][^'\"]{6,})" -- . ':!*.md' ':!.gitignore' ':!scripts/guardrail-scan.sh' 2>/dev/null; then
   echo "FAIL: secret pattern found. This repo is PUBLIC — remove it."
   exit 1
 fi
