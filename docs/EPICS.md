@@ -19,7 +19,7 @@
 ## 2. EPICS (owners, deadlines — all under the charter, no per-item khalid gates)
 **EPIC 1 — SHIP THE BRICKS:** consent fix **08-22** · engagement loop **08-23** · capability layer v1 ✅ **DONE (dc8aa23)** · dry-run gate **08-24** · instructions **08-25** · pilot **08-31**
 **EPIC 2 — MONEY:** price list ✅ done (in charter scope — auto-effective on digest publication) · wallet-sync **08-22** · sponsor fund **08-23** · OpenRouter lanes **08-23** · Tap/Plugn **08-28** (cred rotation first)
-**EPIC 3 — MODELS & EVOLUTION:** FT lane ✅ · **evolution cycle 2 🔄 running (33 samples)** · tiered routing **08-26** · propose/verify **09-02** · Unsloth phase-2 on-trigger (≥100 samples or 35B)
+**EPIC 3 — MODELS & EVOLUTION:** FT lane ✅ · **evolution cycle 2 ✅ (35/39, held-out 2/6 vs 1/6)** · propose/verify engine **🔄 LIVE (free lanes, +1 sample/5min)** · tiered routing **08-26** · **MUSE-GLIMMER-30B card (new)**: at dataset ≥100 → probe 30B 4-bit (Unsloth, fits 3090) vs harness as phase-2 base; **VISION-LANE card (new)**: local $0 vision lane (receipt/visit photos) via Glimmer 30B vision, evaluated 09-05 · Unsloth phase-2 on-trigger (≥100 samples)
 **EPIC 4 — ACCOUNTABILITY:** attestation heartbeat ✅ · digest ✅ · **STANDING IMPROVE LOOP (new)**: weekly self-audit — tunnels/bridge/router/lanes health, drill fixes in-lane under charter, report one line per week in the digest; any silent degradation fixed before it's seen.
 
 ## 3. FUTURE PLANS (the horizon, so nothing runs blind)
