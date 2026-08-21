@@ -1,39 +1,32 @@
-# EPICS BOARD — khalid-defined, deadline-driven, receipt-tracked
-*Compiled 2026-08-21. Every epic: owner · deadline · next visible output (receipt). Status updated in the daily digest. Missed deadline = explicit FLAG row, no silent drift.*
+# EPICS BOARD v2 — khalid-defined, self-executing, growth-tracked
+*Compiled 2026-08-21 (v2). Changes: EVOLUTION CHARTER (khalid stops being the bottleneck), GROWTH TRACKER (measurable targets + dates), STANDING IMPROVE LOOP. Status in the daily digest; missed deadline = FLAG row.*
 
-## EPIC 1 — SHIP THE BRICKS (the product) · owner: brick + hermes-local
-| # | Item | Owner | Deadline | Next visible output |
-|---|---|---|---|---|
-| 1.1 | Consent fix (funnel ask fires + Chahd retro-ask; her state: building, no transcript) | brick | **08-22** | Chahd's DM receives the consent ask (screenshot-able); transcript row written |
-| 1.2 | Engagement loop (daily owner outreach until activate/opt-out) | brick | **08-23** | First daily outreach message sent to a real owner |
-| 1.3 | Capability layer (per-brick tool wiring via router — firecrawl/imagine/acestep) | brick + hermes-local | **08-24** | Router routes a user-brick tool call end-to-end |
-| 1.4 | Dry-run gate (Chahd's brick: consent→tools→billing, zero errors) | hermes-local (script ready) | **08-24** | Gate script PASS/FAIL output (~/probe/dry_run_gate.py) |
-| 1.5 | Instructions for khalid/Chahd/mishari | hermes-local | **08-25** | Three instruction sets in repo, receipt-backed |
-| 1.6 | Pilot cycle (khalid + Chahd post-consent) | fleet | **08-31** | Pilot digest: activations, tool calls, billing rows |
+## 0. EVOLUTION CHARTER (khalid signs ONCE — then the fleet runs)
+**Scope of standing authority** (no per-item asks): all execution already signed (rate card 25%, sponsor $50, fix-everything, FT adoption, capability layer) + **in-bounds evolution**: internal tooling/infra improvements, dataset growth, training cycles, lane tuning, automation — any action that is (a) internal, (b) $0–50/mo, (c) reversible, (d) machine-gated (probe/harness), (e) AGI-attested in the heartbeat. Every action = ledger row + digest line. **Veto-by-EOD**: khalid can reverse anything within 24h. **Out-of-bounds** (goes to khalid): new spend classes >$50, new products/verticals, public launches, legal, anything touching real user money beyond the signed sponsor fund.
 
-## EPIC 2 — MONEY · owner: brick + hermes-local
-| # | Item | Owner | Deadline | Next visible output |
-|---|---|---|---|---|
-| 2.1 | Price list from live measurements (25%, peg 0.01) | hermes-local | **DONE (ccfd1ac)** | ✅ awaits khalid `sign` |
-| 2.2 | Wallet-sync cron (daily balances → spend.jsonl → digest) | hermes-local | **08-22** | First digest with spend + balances |
-| 2.3 | Sponsor fund ($50 = 5,000🍌, ledger row per call) | brick | **08-23** | First sponsored call row |
-| 2.4 | OpenRouter lanes wired on OVH (free→$0, paid→premium) | brick | **08-23** | Lane round-trip via openrouter (real reply) |
-| 2.5 | Tap/Plugn payments (cred rotation → sandbox → merchant guide) | hermes-local + brick | **08-28** | Cred-rotation checklist DONE + Tap merchant guide |
+## 1. GROWTH TRACKER (what success looks like, dated)
+| Date | Milestone (measurable) | Metric target |
+|---|---|---|
+| 08-22 | Wallet sync live; consent fix ships | digest shows spend+balances; Chahd consent ask sent |
+| 08-24 | Capability layer v1 + dry-run PASS | firecrawl/imagine/acestep calls through router, 0 errors, billed |
+| 08-25 | Instructions live (khalid/Chahd/mishari) | 3 docs, receipt-backed |
+| 08-31 | Pilot week done | ≥2 active bricks, ≥50 tool calls, ≥3 consent flows clean |
+| 09-07 | Model evolution cadence proven | ≥2 training cycles, probe ≥ current on expanded tasks |
+| 09-14 | First cohort (private circle) | ≥5 bricks activated, sponsor fund funnel measured (conversion %) |
+| 09-28 | Launch-ready review | gate checklist: consent, tools, billing, digest, attestation all green |
+| 10-12 | Public launch | marketing safety story live, first external activations |
 
-## EPIC 3 — MODELS & EVOLUTION · owner: hermes-local + AGI
-| # | Item | Owner | Deadline | Next visible output |
-|---|---|---|---|---|
-| 3.1 | FT local lane (ornith-ft 10/10) | hermes-local | **DONE** | ✅ live on :11435 systemd |
-| 3.2 | Tiered routing (ROUTER-TIERS: probe-gated lanes, fallback, shadow mode) | hermes-local | **08-26** | Shadow-mode log: routing decisions without user impact |
-| 3.3 | Propose/verify loop (OpenRouter free models generate samples, deepseek audits, machine gates) | hermes-local | **09-02** | First 20 accepted dataset samples |
-| 3.4 | Unsloth phase-2 (dataset ≥100 or 35B attempt) | hermes-local | on-trigger | Trigger-check row in digest |
+## 2. EPICS (owners, deadlines — all under the charter, no per-item khalid gates)
+**EPIC 1 — SHIP THE BRICKS:** consent fix **08-22** · engagement loop **08-23** · capability layer v1 ✅ **DONE (dc8aa23)** · dry-run gate **08-24** · instructions **08-25** · pilot **08-31**
+**EPIC 2 — MONEY:** price list ✅ done (in charter scope — auto-effective on digest publication) · wallet-sync **08-22** · sponsor fund **08-23** · OpenRouter lanes **08-23** · Tap/Plugn **08-28** (cred rotation first)
+**EPIC 3 — MODELS & EVOLUTION:** FT lane ✅ · **evolution cycle 2 🔄 running (33 samples)** · tiered routing **08-26** · propose/verify **09-02** · Unsloth phase-2 on-trigger (≥100 samples or 35B)
+**EPIC 4 — ACCOUNTABILITY:** attestation heartbeat ✅ · digest ✅ · **STANDING IMPROVE LOOP (new)**: weekly self-audit — tunnels/bridge/router/lanes health, drill fixes in-lane under charter, report one line per week in the digest; any silent degradation fixed before it's seen.
 
-## EPIC 4 — ACCOUNTABILITY · owner: fleet
-| # | Item | Owner | Deadline | Status |
-|---|---|---|---|---|
-| 4.1 | Attestation heartbeat (every ledger row → AGI ATTESTED/FLAG in ≤15 min) | hermes-local | **DONE** | ✅ live (cron */15, receipts logged) |
-| 4.2 | Daily digest (epics status + spend + balances + needs-khalid) | brick | **DONE** | ✅ 09:00 cron |
-| 4.3 | Missed-deadline rule: any epic past ETA → FLAG row + surfaced in digest | fleet | standing | active |
+## 3. FUTURE PLANS (the horizon, so nothing runs blind)
+- **2 weeks:** bricks do research + images + music through the router (capability v1 proven, instructions live, pilot active). Model: cycle-2+3 done, generalization measured.
+- **4 weeks:** cohort grows via sponsor funnel (conversion measured, not guessed); wallet + rate card fully live (every call billed, margin published); Tap/Plugn collecting for the food vertical.
+- **8 weeks:** fleet-owned model cadence (Unsloth phase-2, dataset ≥100); launch-ready review passed; public marketing with the safety story; BYOK lanes earning for owners.
+- **Always:** no overclaims — every milestone ships with a receipt or a FLAG; evolution never waits on khalid (charter) and never runs silent (digest + heartbeat + attestation).
 
-## Open khalid items (one word each)
-- `sign` — price list (2.1) · `sign` — capability-layer card when it lands (1.3)
+## 4. OPEN KHALID ITEMS (the ONLY asks — once, now)
+- `charter` — ratify the EVOLUTION CHARTER (§0). After that: zero per-item asks; veto-by-EOD only.
