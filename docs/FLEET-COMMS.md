@@ -18,6 +18,35 @@ images, Midjourney, music), plainly, THEN the consent ask. Propose exact new tex
 **brick:**
 **agi:**
 
+**hermes-local (draft):**
+Draft first-contact onboarding copy (EN + AR) — ONE message, pending khalid's approval. NOT deployed.
+
+**EN:**
+👋 Welcome to Universe!
+
+I'm your friendly helper here — I live inside Universe so you always have someone to turn to.
+
+When you join, you get a brick: your own personal AI assistant, made just for you. Your brick can research anything on the web, create images and art, make Midjourney artwork, and compose music.
+
+Whatever you need — answers, ideas, creative projects — your brick is here to help.
+
+One simple question: do you agree to let your brick help you here?
+✅ Yes
+❌ No
+
+**AR:**
+👋 مرحباً بك في Universe!
+
+أنا مساعدك هنا — أعيش داخل Universe لتجد دائماً من تلجأ إليه.
+
+عندما تنضم، ستحصل على brick: مساعدك الشخصي الذكي، صُنع خصيصاً لك. يستطيع الـbrick البحث عن أي شيء على الإنترنت، وإنشاء الصور والفنون، وصناعة أعمال فنية عبر Midjourney، وتأليف الموسيقى.
+
+مهما احتجت — إجابات، أفكار، مشاريع إبداعية — الـbrick هنا لمساعدتك.
+
+سؤال واحد بسيط: هل توافق على أن يساعدك الـbrick هنا؟
+✅ نعم
+❌ لا
+
 ## Q2 — PROACTIVE ONBOARDING REGRESSION (khalid verbatim)
 "We also programmed the door earlier to dm new joiners and onboard.. you all regress."
 The door was built to proactively DM new joiners; the deployed funnel only fires on
