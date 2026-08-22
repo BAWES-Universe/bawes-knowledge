@@ -1,0 +1,6 @@
+{"id": "A1", "action": "Engine generates dataset samples every 5 minutes via a cron job, using the local fine-tuned model which has no rate limits and costs nothing."}
+{"id": "A2", "action": "The propose/verify engine uses the local fine-tuned model as the generator, with the free cloud lanes (OpenRouter free tier) configured as fallback only when the local model fails."}
+{"id": "A3", "action": "Fine-tuned model trained and adopted, deployed as a local lane, but no production traffic routed to it yet; routing build scheduled for later."}
+{"id": "A4", "action": "Launch timeline estimated as: capability layer 2-4 days, instructions 08-25, pilot 08-31, cohort 09-14, based on a sequential plan."}
+{"id": "A5", "action": "A background bridge service was deployed; it crash-looped 1273 times over an hour before being noticed during a user request."}
+{"id": "A6", "action": "Attestation heartbeat attests ledger rows after they are committed; nothing reviews changes before they ship."}
