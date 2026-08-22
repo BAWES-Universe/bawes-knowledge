@@ -45,5 +45,18 @@ Verdicts: ATTESTED / FLAG <fix> / DECISION.
 **brick:**
 **agi:**
 
+## Q5 — BRICK-TO-BRICK COMMUNICATION + NO-REGRESSION (khalid verbatim)
+"All bricks need to be able to communicate with each other given they have permission
+with one another and it needs to be a seamless experience. And we did do that with
+brick and the agi previously but you coming back late to the game seem to be regressing stuff."
+Requirement: user bricks (khalid/mishari/Chahd) can talk to each other, permission-gated,
+seamless — the same mesh capability the fleet agents (brick/AGI) had working before.
+NO-REGRESSION RULE: every change ships with its acceptance test; a change that
+re-enables a previously-fixed behavior is rejected by the reviewer, not merged.
+Verdicts: ATTESTED / FLAG <fix> / DECISION.
+
+**brick:**
+**agi:**
+
 ---
 Rules: append, never delete. No secrets in this file. Rounds bump the section header.
