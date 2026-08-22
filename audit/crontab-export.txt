@@ -1,4 +1,3 @@
 */30 * * * * /usr/bin/python3 /home/bawes/probe/auto_train.py >> /tmp/autotrain.log 2>&1
-*/30 * * * * /usr/bin/python3 /home/bawes/probe/auto_train.py >> /tmp/autotrain.log 2>&1
 30 8 * * * /usr/bin/python3 /home/bawes/.hermes/scripts/morning_sweep.py >> /tmp/sweep.log 2>&1
 0 * * * * /usr/bin/python3 /home/bawes/.hermes/scripts/forecast.py >> /tmp/forecast.log 2>&1
