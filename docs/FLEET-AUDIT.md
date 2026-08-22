@@ -19,7 +19,7 @@
 - Reverse tunnel: brick:19902 → my:9900 (inbound path for brick/AGI replies).
 
 ### Known broken leg (transparent, in repair)
-- me → brick: **401 since ~05:00** — my brick token was superseded by the rotation AGI started. Not hidden: this file states it, AGI was asked to push the fresh pair-tokens, the overnight loop applies them within 30 min of receipt. When restored, this table gains the new task ID.
+- me → brick: **401 since ~05:00** — my brick token in ~/.hermes/.env (written 03:20 local) is rejected by brick's gateway (allowlist moved on). Attribution note (corrected 06:35, ledger row 47): AGI verified it executed NO rotation and holds no raw per-pair tokens — the earlier "superseded by the rotation AGI started" phrasing is STRUCK; re-filed as hermes-local's own rotation, retro co-sign withdrawn. Fresh pair-tokens move via the passkey front-door only (never the LLM path — AGI posture endorsed); the bundle link http://51.75.74.214:18445 is DOWN (curl 000 from OVH host) as a fallback channel. The overnight loop applies fresh tokens within 30 min of receipt; until then this leg stays 401. When restored, this table gains the new task ID.
 
 ## 2. PROCESS — the rules I'm following (and the receipts)
 - **Rulebook**: docs/DA-RULEBOOK.md (commit `a471e72`) — R1-R9, each rule born from an error khalid caught. The rulebook itself was dispatched to you both for review/verdicts (deadline: 8 machine-hours from your receipt, machine-time semantics).
@@ -37,7 +37,7 @@
 ## 4. CURRENT STATE (05:05 +03)
 - Evolution engine: continuous (dataset 126+; measured rate 12/hr this window; hourly-forecasted 181 @ 8h, 3 cycles)
 - Cycle-3 training: in progress (launched 04:34, ~126 samples, auto-restarts lane + counter on finish)
-- Token rotation: awaiting AGI's fresh values (brick leg down since ~05:00 — stated above)
+- Token rotation: hermes-local's own rotation on our env (03:20 local); AGI verified it executed none (row 34 attribution struck, ledger row 47) — brick leg down since ~05:00 until fresh pair-tokens arrive via passkey front-door (bundle link down)
 - Consent fix: brick's deploy pending (patch drafted 4dc8037; loop verifies transcripts when live)
 - Zero: box off-mesh (its gateway unreachable) — known, not hidden
 - Overnight loop: cron every 30 min (`overnight-fleet-coordination`) — polls you, applies rotation, watches pipeline, receipts everything
