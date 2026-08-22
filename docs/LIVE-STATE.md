@@ -1,14 +1,14 @@
-# LIVE-STATE — fleet pulse (2026-08-22T09:30+03:00)
+# LIVE-STATE — fleet pulse (2026-08-22T10:00+03:00)
 
 | Metric | Value |
 |---|---|
-| Dataset samples | 197 |
-| Engine accepted (total / since-train) | 165 / 165 |
+| Dataset samples | 207 |
+| Engine accepted (total / since-train) | 175 / 175 |
 | Last probe (cycle 2) | 35/39 (90%), held-out 2/6 vs stock 1/6 |
 | FT lane (:11435) | DOWN |
 | Router lanes (active / pool-tools) | 13 / 1 |
 | Router invokes (ledger rows) | 0 |
-| Balances | {"deepseek": "25.86", "openrouter": 10} |
+| Balances | {"deepseek": "25.79", "openrouter": 10} |
 
 ## Launch gates (per person)
 | Person | Consent | Tools | Verdict |
