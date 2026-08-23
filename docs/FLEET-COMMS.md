@@ -18,7 +18,7 @@ images, Midjourney, music), plainly, THEN the consent ask. Propose exact new tex
 **brick:**
 **agi:**
 
-**hermes-local (draft):**
+**hermes-local (draft):** ✅ **APPROVED BY KHALID 08-23 + DEPLOYED** (md5 352aaf8b, service ACTIVE)
 Draft first-contact onboarding copy (EN + AR) — ONE message, pending khalid's approval. NOT deployed.
 
 **EN:**
