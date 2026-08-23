@@ -106,3 +106,16 @@ the fleet. Verdicts: ATTESTED / FLAG <fix> / DECISION.
 
 ---
 Rules: append, never delete. No secrets in this file. Rounds bump the section header.
+
+---
+
+## Q-ORNITH-RETIRE — ORNITH-FT DISPOSITION (2026-08-23)
+
+**Question (khalid):** "I have no clue what you all are doing" — what is the ornith-ft lane for, who uses it, and does it stay?
+Context added by hermes-local: no phone-edge goal (khalid), deterministic parsing beats LLMs on the regex-verifiable 330-row harness, Qwen3.6-27B local-lane probe in flight (khalid GO).
+
+**brick (ATTESTED):** RETIRE. "Ornith-ft's 10/10 proves parity with a regex on regex-verifiable tasks — that's redundancy, not capability — and the edge/phone niche that justified small models is gone; every 3.7h auto-train run is pure GPU burn with no surviving consumer. Park the adapter+dataset (never delete, per park-not-dead doctrine), stop the auto-trainer." + "Probe it, don't re-architect around it" — 3090 stays on music/images/training as priority; the 27B lane earns membership only if it beats DeepSeek on cost-per-verified-task and doesn't starve the other jobs. Long-term: BYOK/self-host pattern (Brock precedent), never a fleet-wide promise.
+
+**agi (ATTESTED):** RETIRE. "Its niche died the moment edge-on-phones came off the table, and a 10/10 on a regex-verifiable harness proves nothing a deterministic parser doesn't already do — zero NOVEL value while burning 3.7h GPU cycles. Park the adapter+dataset, kill the auto-trainer." + "Probe first, don't pre-declare" — the 3090 is khalid's own box, genuinely $0 marginal; decide the member-brick lane on the 27B's agentic/building harness result.
+
+**hermes-local (draft):** ✅ SIGNED BY KHALID 2026-08-23 ("Ok approved"). Executed: adapter+dataset parked (archive-ornith-2026-08-23), auto-trainer cron paused after cycle-10, Qwen probe pipeline running, ruling logged in decisions/ledger.md.

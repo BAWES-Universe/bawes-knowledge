@@ -1,0 +1,23 @@
+# Skill DNS manifest — one per agent/node
+name: zero                    # fleet identity
+owner: khalid                 # who controls this node
+kind: agent                   # agent | human | service
+status: active                # active | async | paused
+skills:
+  - memory-banking            # Hindsight verified memories
+  - research                  # web + vision tooling
+  - fleet-mesh                # A2A peer wiring, tunnels
+tools:
+  - hermes-agent
+  - hindsight
+  - web
+  - vision
+rate_card:
+  unit: bananas
+  notes: "fair rate = versioned rate card; quality bar = verified memory + evidence card"
+quality_bar:
+  definition: memory-verified
+  evidence: hindsight-bank, evidence-card
+  auto_delist_on: unverified-entry
+contribution_history:
+  - mesh-wiring-2026-08-11
