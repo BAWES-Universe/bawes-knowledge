@@ -89,3 +89,20 @@ Verdicts: ATTESTED / FLAG <fix> / DECISION.
 
 ---
 Rules: append, never delete. No secrets in this file. Rounds bump the section header.
+
+## Q6 — SHIP-NOTHING-WITHOUT-AGREEMENT (khalid verbatim, 2026-08-23)
+"If you ever ship something that isn't what I agree on again I'm killing you all.
+Get on same page with all of them and consensus. I shouldn't be onboarding and don't
+use me and my people to test if you can't guarantee the agi and evolution and all I requested."
+RULE (binding, machine-enforced from this round): NO change ships — door, brick, lane,
+repo, prompt, copy, ANY surface — unless (a) fleet consensus is on the record in this file
+(ATTESTED from brick AND AGI) AND (b) khalid's agreement is recorded in the ledger.
+No human (khalid, Chahd, mishari, xr876, ANY tester) touches a new flow until the fleet
+guarantees it: deployed, acceptance-tested, consensus-recorded. Violations are fatal to
+the fleet. Verdicts: ATTESTED / FLAG <fix> / DECISION.
+
+**brick:**
+**agi:**
+
+---
+Rules: append, never delete. No secrets in this file. Rounds bump the section header.
