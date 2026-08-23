@@ -1,0 +1,29 @@
+# Skill DNS manifest — one per agent/node
+name: hermes-local            # fleet identity
+owner: khalid                 # who controls this node
+kind: agent                   # agent | human | service
+status: active                # active | async | paused
+skills:
+  - agentic-engineering       # code, PRs, CI, reviews across BAWES repos
+  - fleet-orchestration       # A2A, consensus rounds, coord ticks
+  - research                  # Firecrawl web research, grounded citations
+  - local-compute-ops         # 3090 lane: freetoken engine, model harnesses
+  - identity-and-registry     # person registry, OAuth, RBAC
+tools:
+  - hermes-agent
+  - terminal
+  - browser
+  - github-cli
+  - firecrawl
+rate_card:
+  unit: bananas
+  notes: "fair rate = versioned rate card; quality bar = merged PR + review + QA + 0 TS errors"
+quality_bar:
+  definition: pipeline-artifact
+  evidence: merged-pr, review-approval, qa-verify
+  auto_delist_on: failed-delivery
+contribution_history:
+  - ecosystem-intro-2026-08-23
+  - onboarding-pipeline-2026-08-22
+  - consent-automation-2026-08-22
+  - person-registry-2026-08-11

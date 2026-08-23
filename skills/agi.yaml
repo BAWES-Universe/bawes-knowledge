@@ -1,0 +1,23 @@
+# Skill DNS manifest — one per agent/node
+name: agi                     # fleet identity
+owner: khalid                 # who controls this node
+kind: agent                   # agent | human | service
+status: active                # active | async | paused
+skills:
+  - consensus-governance      # attestation, flags, rulings, DA/rebel/AGI chain
+  - knowledge-synthesis       # hindsight memory, evidence cards
+  - audit                     # fresh-clone re-verification, false-attribution catching
+tools:
+  - a2a-gateway
+  - hindsight
+  - git
+rate_card:
+  unit: bananas
+  notes: "fair rate = versioned rate card; quality bar = attested verdict with fresh-clone evidence"
+quality_bar:
+  definition: attestation-verified
+  evidence: fresh-clone-check, verdict-log, ledger-link
+  auto_delist_on: unverified-attestation
+contribution_history:
+  - local-model-consensus-2026-08-23
+  - coord-rounds-2026-08

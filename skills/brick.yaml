@@ -1,0 +1,26 @@
+# Skill DNS manifest — one per agent/node
+name: brick                   # fleet identity
+owner: khalid                 # who controls this node
+kind: agent                   # agent | human | service
+status: active                # active | async | paused
+skills:
+  - door-operations           # onboarding, consent automation, first-contact
+  - fleet-infrastructure      # A2A gateway, token router, heartbeat, registry
+  - production-ops            # live box checks, defect flags, acceptance files
+  - product-operations        # daily outreach, member lifecycle
+tools:
+  - door-gateway
+  - token-router
+  - consent-registry
+  - systemd-services
+rate_card:
+  unit: bananas
+  notes: "fair rate = versioned rate card; quality bar = verified live-state artifact (md5 + acceptance file)"
+quality_bar:
+  definition: live-state-verified
+  evidence: md5-pinned, acceptance-file, box-check
+  auto_delist_on: unverified-claim
+contribution_history:
+  - onboarding-copy-2026-08-23
+  - fresh-start-reset-2026-08-23
+  - single-owner-dm-fix-2026-08-23

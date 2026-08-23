@@ -49,4 +49,15 @@ print(f'ok: {len(rows)} dated decision rows')
 "
 fi
 
-echo "✅ clean: no secrets, no env, no raw data, manifests valid"
+echo "=== 6. No production IP literals (public repo!) ==="
+if git grep -nE "(204\.168\.164\.248|51\.75\.74\.214)" -- . ':!scripts/guardrail-scan.sh' 2>/dev/null; then
+  echo "FAIL: production IP literal found. This repo is PUBLIC — redact it (see ledger 2026-08-23 redaction ruling)."
+  exit 1
+fi
+# private-range literals are also banned (internal topology), localhost exempt
+if git grep -nE "(^|[^0-9])(10\.|192\.168\.|172\.(1[6-9]|2[0-9]|3[01])\.)" -- . ':!*.md' ':!scripts/guardrail-scan.sh' 2>/dev/null; then
+  echo "FAIL: private-range IP literal found in non-doc file. This repo is PUBLIC — redact it."
+  exit 1
+fi
+
+echo "✅ clean: no secrets, no env, no raw data, manifests valid, no prod IP literals"

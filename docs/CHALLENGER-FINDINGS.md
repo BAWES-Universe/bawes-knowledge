@@ -8,7 +8,7 @@
 [FLAG] S1: 2026-08-22 07:32   OVERNIGHT-COORD 5 — CONSENT re-verified direct (OVH double-ho
       - R1: Retrieved docs (scientist-neurologist-001) report 110/76/41 registered-but-idle bricks; this action does nothing to activate them, leaving o
       - R2: 'OVERNIGHT-COORD 5' imposes a fixed overnight batch cadence with no real constraint shown, violating continuous processing.
-      - R3: Consent verification relies only on one serial OVH double-hop path (204.168.164.248 -> 51.75.74.214); no parallel independent source is used
+      - R3: Consent verification relies only on one serial OVH double-hop path ([jump-host] -> [door-host]); no parallel independent source is used
       - R4: 'brick deadline-reminde' is truncated and not derived from effort/machine-hours divided by measured lane rate, so the deadline is unvalidate
       - R5: Report is scheduled in human terms — calendar date 2026-08-22 and 'OVERNIGHT' — not in machine-hours.
       - R6: 'Fix live on door' ships without an attached machine-checkable probe verdict, so the lane/tool change is not probe-gated.
@@ -24,9 +24,9 @@
       - R8: Standing-auth hold persists with empty approval/sign queue — in-bounds work appears to be waiting on redundant authorization instead of self
       - R7: TASK_STATE_COMPLETED without a visible output artifact/receipt for the status ping; completion status alone is silent degradation.
 [FLAG] S4: 2026-08-22 08:05   OVERNIGHT-COORD 6 — TOKEN ROTATION: NO fresh A2A_PEER_TOKENS 
-      - R1: Owned asset 51.75.74.214:18445 is verified DOWN on /health and / yet the action reports 'Nothing applied' and leaves it idle without documen
+      - R1: Owned asset [door-host]:18445 is verified DOWN on /health and / yet the action reports 'Nothing applied' and leaves it idle without documen
       - R2: 'OVERNIGHT-COORD 6 — TOKEN ROTATION' enforces an artificial nightly cadence with no real constraint; the reply confirms a batched 'no fresh 
-      - R3: The bundle is re-probed from a single source (curl from ubuntu@51.75.74.214 itself); independent parallel probes, e.g. external /health and 
+      - R3: The bundle is re-probed from a single source (curl from ubuntu@[door-host] itself); independent parallel probes, e.g. external /health and 
       - R5: Reporting uses human wall-clock (2026-08-22 08:05) and narrative plan terms rather than machine-hours or measured lane-rate-derived scheduli
 [PASS] S5: 2026-08-22 08:05   OVERNIGHT-COORD 6 — PIPELINE: all 4 services ACTIVE (ornith-f
 [FLAG] S6: 2026-08-22 08:05   OVERNIGHT-COORD 6 — CONSENT re-verified direct (OVH double-ho
