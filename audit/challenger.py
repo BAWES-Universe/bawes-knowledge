@@ -5,6 +5,9 @@ returns PASS or FLAGs with rule references + reasons. Run: challenger.py <action
 Also supports --retro <file> to review recorded actions (morning sweep uses the ledger)."""
 import json, os, pathlib, subprocess, sys, time, urllib.request
 
+# Fleet-internal jump host — set in the deployment env, never committed as a literal
+JUMP_HOST = os.environ.get("JUMP_HOST", "jump-host-internal")
+
 RULES = [
     ("R1", "capacity utilization — any owned asset that can work must be working"),
     ("R2", "continuous over batched — no artificial cadence without a real constraint"),
@@ -27,7 +30,7 @@ def invoke_lane(action_desc, rulebook):
             "PASS only when nothing in the action violates the rules. Do not be lenient.")},
         {"role": "user", "content": f"RULEBOOK:\n{rulebook}\n\nACTION TO REVIEW:\n{action_desc}"}]}}).encode()
     # via the proven helper chain (my box -> brick -> OVH router -> deepseek lane)
-    cmd = "ssh -o BatchMode=yes -o ConnectTimeout=8 root@204.168.164.248 'bash /root/invoke_free.sh'"
+    cmd = "ssh -o BatchMode=yes -o ConnectTimeout=8 root@%s 'bash /root/invoke_free.sh'" % JUMP_HOST
     for attempt in range(3):
         p = subprocess.run(["bash", "-c", cmd], input=payload, capture_output=True, timeout=120)
         out = p.stdout.decode(errors="replace").strip()
