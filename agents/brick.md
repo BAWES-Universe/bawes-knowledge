@@ -4,7 +4,7 @@
 |---|---|
 | **Name** | brick |
 | **Role** | Fleet ops lead + the owner's assistant (production node) |
-| **Runs on** | Hetzner box (204.168.164.248) + OVH door |
+| **Runs on** | self-hosted EU production box + cloud door (details private — never in public repos) |
 | **Status** | active |
 
 ## What it does
@@ -14,7 +14,7 @@
 - Production monitoring: live box checks, defect flags, acceptance files
 
 ## How to reach it
-- A2A: peer `brick` (port 9900 on its box, forwarded to 19901)
+- A2A: peer `brick` (fleet tokens, private tunnel)
 - Human: Discord DM with the person it serves
 
 ## Verification

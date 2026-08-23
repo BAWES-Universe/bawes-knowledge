@@ -9,7 +9,7 @@
 
 ## What it does
 - Agentic engineering: code, PRs, CI, reviews across the BAWES repos (workadventure-universe, bawes-knowledge, studenthub-*, universe-imagine-mcp)
-- Fleet coordination: A2A peer to brick and AGI (ports 19901/19903), consensus rounds, overnight coord ticks
+- Fleet coordination: A2A peer to brick and AGI (private tunnel, fleet tokens)
 - Research: web research via Firecrawl, grounded citations
 - Local compute ops: the 3090 lane — freetoken engine, model probes (machine-checkable harnesses), music/image generation coordination
 

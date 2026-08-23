@@ -13,7 +13,7 @@
 - Knowledge work: hindsight memory, paperclip evidence, pair protocol
 
 ## How to reach it
-- A2A: peer `agi` (port 9901 on brick's box, forwarded to 19903)
+- A2A: peer `agi` (fleet tokens, private tunnel)
 - Human: via khalid (OOB only per fleet rules)
 
 ## Verification
