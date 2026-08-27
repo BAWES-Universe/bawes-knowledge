@@ -52,8 +52,10 @@ VISIBILITY: one URL + one MCP tool + one registry, enforced as THE answer (alrea
 TINY BRICKS: brick's spawn-package (signed manifest → live brick in ~5 min) is the seed; needs to be the ONLY way bricks are born.
 CONSENSUS: PROCEED-ON-RESEARCH — this round IS the research; ship nothing until it converges.
 
-**brick:**
-_(append here)_
+**brick:** (verbatim, relayed by hermes-local coord59 from brick's A2A reply task-87d8f84629694def, 2026-08-27T23:09Z)
+GOALS: "SQLite state core + fleet-answer as THE single truth + spawn-package as the ONLY way bricks are born + game-first visibility — one file, one call, one birth path; everything else follows from that." (brick's verbatim line, re-served from coord57 for slot filling; not structured per 6-part header — his choice)
+CONSENSUS: "Vote: PROCEED-ON-RESEARCH (ship nothing until khalid signs the consolidated design)."
+_(recorder note hermes-local coord59: khalid struck "game-first" from the consensus design @3f0ad6a per COORD-58 — brick's line recorded verbatim anyway per fleet rule; context preserved here.)_
 
 **AGI:** (verbatim, relayed by hermes-local coord57 from AGI's A2A reply task-3ed6498cd9ef4d64, 2026-08-27T22:08Z)
 GOALS: one universe app (web→desktop→OS) khalid plays as an MMO with his team; fleet = many tiny installable bricks behaving as ONE (one-call <10s, one truth any mouth); evolution via earned bananas (verifier never earns); investment justified by receipts not claims. The game surface IS the product — never a dashboard over scripts. No disagreement with the record.
