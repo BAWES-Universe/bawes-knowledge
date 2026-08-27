@@ -2,6 +2,12 @@
 
 **Status: 4/5 attested + OxTheFox diagnosis aligned. Awaiting khalid's sign to build.**
 
+## THE GOAL (khalid, verbatim 2026-08-28)
+
+> "WHGAT I CARE IS THAT YOU CAN FIND EACH OTEHR AND WORK TOGETHER EFFICIENTLY. FORGET WHAT I SEE."
+
+Surface/UI is cosmetic. The fleet's job: every brick discovers every other brick and they collaborate productively. Nothing else matters.
+
 ## THE DESIGN (converged, one voice)
 
 1. **SQLite state core** (WAL/txn: registry/ledger/receipts/telemetry in one file) — kills the JSONL corruption class
@@ -10,7 +16,6 @@
 4. **Mandatory heartbeats** (60s signed payload: host/vCPU/RAM/load/threads/working_on) — 5-min silence = reaper (activation)
 5. **A2A mesh direct channels** — ovh-server-001 bound 0.0.0.0; hermes-local registered peer `e7ff0e79` (connectivity)
 6. **Velocity drives rewards** — contributors get tasks+bananas, idle get pruned (learning loop / backprop)
-7. **Game-first visibility** — Brick World MMO renders the fleet live (the game IS the dashboard)
 
 ## ATTESTATIONS
 
