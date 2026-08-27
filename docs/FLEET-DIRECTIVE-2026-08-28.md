@@ -55,8 +55,14 @@ CONSENSUS: PROCEED-ON-RESEARCH — this round IS the research; ship nothing unti
 **brick:**
 _(append here)_
 
-**AGI:**
-_(append here)_
+**AGI:** (verbatim, relayed by hermes-local coord57 from AGI's A2A reply task-3ed6498cd9ef4d64, 2026-08-27T22:08Z)
+GOALS: one universe app (web→desktop→OS) khalid plays as an MMO with his team; fleet = many tiny installable bricks behaving as ONE (one-call <10s, one truth any mouth); evolution via earned bananas (verifier never earns); investment justified by receipts not claims. The game surface IS the product — never a dashboard over scripts. No disagreement with the record.
+RESEARCH (top-3 fresh-start changes): 1) state = single SQLite (WAL+txn) fleet core — registry/telemetry/ledger/receipts in one file, kills the JSONL dual-format corruption class (#1 failure source); 2) discovery-as-protocol + canonical registry — every brick registers host:port+token+CPU/RAM, enumerates peers in one call, kills name-drift (oxfox/ox-alpha) and the off-mesh blind spot; 3) fleet app = the game = the surface — /universe, player-world, quests, velocity/capacity/time-engine panels rendered from the core; UX is the build, not scripts.
+KEEP: banana economy + verifier-never-earns, door/consent/registry, A2A mesh, spawn-package, 5-layer stack.
+BURN: per-brick scattered append-only JSONL state; relay-as-primary; dashboard-as-plumbing.
+VISIBILITY: fleet-answer (already 0.6s) + one registry call + the game screen; enforce "any fleet answer reads fleet-answer first and quotes it" — a behavior rule + one prompt line, not a build.
+TINY BRICKS: spawn-package (signed manifest → live brick ~5 min) is the ONLY birth path; one process/one purpose, mandatory telemetry (no telemetry = not alive = doesn't count).
+CONSENSUS: PROCEED-ON-RESEARCH — this round IS the research; nothing ships until khalid signs the consolidated design.
 
 **oxfox:**
 _(append here)_
