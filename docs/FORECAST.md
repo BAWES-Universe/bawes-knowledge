@@ -1,4 +1,4 @@
-# FORECAST — next 8h (machine-computed 2026-08-29T07:05)
+# FORECAST — next 8h (machine-computed 2026-08-29T08:05)
 
 - **Measured rate** (60s live sample): **0.0 samples/hr** (n 349->349)
 - **Training model**: 12 epochs, batch 4, 34.8s/step (measured cycle-2: 108 steps / 1005s)
