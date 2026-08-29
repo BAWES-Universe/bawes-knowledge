@@ -1,4 +1,4 @@
-# LIVE-STATE — fleet pulse (2026-08-29T10:30+03:00)
+# LIVE-STATE — fleet pulse (2026-08-29T11:00+03:00)
 
 | Metric | Value |
 |---|---|
@@ -8,7 +8,7 @@
 | FT lane (:11435) | DOWN |
 | Router lanes (active / pool-tools) |  |
 | Router invokes (ledger rows) |  |
-| Balances |  |
+| Balances | {"deepseek": "0.42", "openrouter": "err:HTTP Error 401: Unauthorized"} |
 
 ## Launch gates (per person)
 | Person | Consent | Tools | Verdict |
