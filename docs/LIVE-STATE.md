@@ -1,4 +1,4 @@
-# LIVE-STATE — fleet pulse (2026-08-29T10:00+03:00)
+# LIVE-STATE — fleet pulse (2026-08-29T10:30+03:00)
 
 | Metric | Value |
 |---|---|
